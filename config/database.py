@@ -1,0 +1,11 @@
+from pymongo.mongo_client import MongoClient
+
+url="mongodb://localhost:27017"
+
+client=MongoClient(url)
+
+db=client.login
+
+collection_name=db['login']
+
+
